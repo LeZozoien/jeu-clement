@@ -32,7 +32,6 @@ public class SettingsMenu : MonoBehaviour
 
         resolutionDropdown.AddOptions(options);
     }
-
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("volume", volume);
