@@ -18,6 +18,7 @@ public class GameOverManager : MonoBehaviour
         instance = this;
     }
 
+   
     public void OnPlayerDeath()
     {
         gameOverUI.SetActive(true);
@@ -39,4 +40,5 @@ public class GameOverManager : MonoBehaviour
     {
         Application.Quit();
     }
+
 }
