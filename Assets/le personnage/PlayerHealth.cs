@@ -34,7 +34,7 @@ public class PlayerHealth : MonoBehaviour
             TakeDamage(20);
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.G))
         {
             TakeHeal(20);
         }

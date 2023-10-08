@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: f0b105d09521f1e47a4690735bc43fcb
   - enabled: 1
+    path: Assets/Scenes/PaDideee.unity
+    guid: 91aa14cae5549a54c94f95adc5f78c17
+  - enabled: 1
     path: Assets/Scenes/Zozoien.unity
     guid: b3499b1f709d69c4890458df5a463aed
   m_configObjects: {}
