@@ -62,17 +62,17 @@ public class PlayerHealth : MonoBehaviour
     {
         PlayerMovement.instance.enabled = false;
         PlayerMovement.instance.animator.SetTrigger("Die");
-        PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Kinematic;
-        PlayerMovement.instance.rb.velocity = Vector3.zero;
-        PlayerMovement.instance.playerCollider.enabled = false;
         GameOverManager.instance.OnPlayerDeath();
+        PlayerMovement.instance.rb2d.bodyType = RigidbodyType2D.Kinematic;
+        PlayerMovement.instance.rb2d.velocity = Vector3.zero;
+        PlayerMovement.instance.playerCollider.enabled = false;
     }
 
     public void Respawn()
     {
         PlayerMovement.instance.enabled = true;
         PlayerMovement.instance.animator.SetTrigger("Respawn");
-        PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Dynamic;
+        PlayerMovement.instance.rb2d.bodyType = RigidbodyType2D.Dynamic;
         PlayerMovement.instance.playerCollider.enabled = true;
         currentHealth = maxHealth;
         healthBar.SetHealth(currentHealth);

@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
     public float groundCheckRadius;
     public LayerMask collisionLayers;
 
-    public Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
     public CapsuleCollider2D playerCollider;
 
