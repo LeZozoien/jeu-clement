@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Main.unity
+    path: Assets/Scenes/Zozoien.unity
     guid: b3499b1f709d69c4890458df5a463aed
   - enabled: 0
     path: Assets/Scenes/MainMenu.unity
