@@ -1,16 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
+
 using UnityEngine;
 
-public class Controller : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
 
     public Rigidbody2D rb2d;
     public Animator animator;
     public float speed = 5;
+    public Transform groundCheck;
+    public float groundCheckRadius;
+    public LayerMask collisionLayers;
+
+    public SpriteRenderer spriteRenderer;
+    public CapsuleCollider2D playerCollider;
+
+    private Vector3 velocity = Vector3.zero;
+    private float horizontalMovement;
+    private float verticalMovement;
+
+    public static PlayerMovement instance;
 
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("Il y a plus d'une instance de PlayerMovement dans la scène");
+            return;
+        }
+
+        instance = this;
+    }
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
